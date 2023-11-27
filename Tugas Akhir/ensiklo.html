@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ensiklo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <title>Komoditas page</title>
+</head>
+<body>
+    <header id="header" on="masukKah()">
+        <div>
+            <nav>
+                <ul>
+                    <a href="index.html" class="tesboy"><img src="assets/icon/logo2.svg" alt="logo"  class="logo"></a>
+                    <!-- <img src="assets/icon/logo.svg" alt="logo" class="logo"> -->
+                    <li><a href="komoditas.html">Komoditas</a></li>
+                    <li><a href="ensiklo.html">Ensiklopedia</a></li>
+                    <li><a href="index.html">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="button-header" id="buttonHeader">
+            <button class="button ms" onclick="redirLogin()">Masuk</button>
+            <button class="button df" onclick="redirDaftar()">Daftar</button>
+        </div>
+        <div class="profill none" id="kotakProfile">
+            <img src="assets/icon/keranjang.svg" alt="" class="img-profil">
+            <a href="profile.html">
+                <img src="assets/images/admin.png" alt="" class="img-profil border-profil">
+            </a>            
+        </div>
+    </header>
+<!-- MAIN BANG -->
+    <main>
+        <div class="atas">
+            <div class="card kiri"></div>
+            <div class="card kanan">
+                <div class="atas-atas">
+                    <p class="berita">Berita</p>
+                    <p class="atas-judul">ber.ikan Menerapkan Sustainable Fishery dengan Pendekatan Komunitas</p>
+                    <p class="atas-desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+                <div class="profile">
+                    <img src="assets/images/admin.png" alt="" style="width: 7%; cursor: pointer;">
+                    <div class="ab-isi">
+                        <p class="ab-nama">Admin</p>
+                        <p>14 Desember 2022</p>
+                    </div>
+                    <div class="desc-btn-ens">
+                        <button class="btn-ens">Baca Lebih Lanjut</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bawah">
+            <div class="bawah-judul">
+                <p>Baca Artikel Lebih Lanjut</p>
+            </div>
+            <div class="ck-button">
+                <button class="btnn hi" id="bck1" onclick="filterCariKomoditas(1)">Semua Artikel</button>
+                <button class="btnn nhi" id="bck2" onclick="filterCariKomoditas(2)">Berita</button>
+                <button class="btnn nhi" id="bck3" onclick="filterCariKomoditas(3)">Tips dan Trik</button>
+                <button class="btnn nhi" id="bck4" onclick="filterCariKomoditas(4)">Komoditas</button>
+                <button class="btnn nhi" id="bck5" onclick="filterCariKomoditas(5)">Event</button>
+                <button class="btnn nhi" id="bck6" onclick="filterCariKomoditas(6)">Company</button>
+            </div>
+            <div class="ensiklo">
+                <div class="card-ensiklo">
+                    <div class="icon-ens gurame">
+                        <img src="" alt="">
+                    </div>
+                    <div class="ens-isii">
+                        <p class="ens-jenis">Tips dan Trik</p>
+                        <p class="ens-title">Cara Budidaya Ikan Gurame</p>
+                        <p class="ens-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="profile2">
+                            <img src="assets/images/admin.png" alt="" style="width: 7%; cursor: pointer;">
+                            <div class="ab-isi2">
+                                <p class="ab-nama2">Admin</p>
+                                <p>14 Desember 2022</p>
+                            </div>
+                            <div class="desc-btn-ens">
+                                <button class="btn-ens" onclick="redirLogin()">Baca Lebih Lanjut</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-ensiklo">
+                    <div class="icon-ens gurame">
+                        <img src="" alt="">
+                    </div>
+                    <div class="ens-isii">
+                        <p class="ens-jenis">Tips dan Trik</p>
+                        <p class="ens-title">Cara Budidaya Ikan Gurame</p>
+                        <p class="ens-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="profile2">
+                            <img src="assets/images/admin.png" alt="" style="width: 7%; cursor: pointer;">
+                            <div class="ab-isi2">
+                                <p class="ab-nama2">Admin</p>
+                                <p>14 Desember 2022</p>
+                            </div>
+                            <div class="desc-btn-ens">
+                                <button class="btn-ens" onclick="redirLogin()">Baca Lebih Lanjut</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-ensiklo">
+                    <div class="icon-ens gurame">
+                        <img src="" alt="">
+                    </div>
+                    <div class="ens-isii">
+                        <p class="ens-jenis">Tips dan Trik</p>
+                        <p class="ens-title">Cara Budidaya Ikan Gurame</p>
+                        <p class="ens-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="profile2">
+                            <img src="assets/images/admin.png" alt="" style="width: 7%; cursor: pointer;">
+                            <div class="ab-isi2">
+                                <p class="ab-nama2">Admin</p>
+                                <p>14 Desember 2022</p>
+                            </div>
+                            <div class="desc-btn-ens">
+                                <button class="btn-ens" onclick="redirArticle()">Baca Lebih Lanjut</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ensiklo">
+                <div class="card-ensiklo">
+                    <div class="icon-ens gurame">
+                        <img src="" alt="">
+                    </div>
+                    <div class="ens-isii">
+                        <p class="ens-jenis">Tips dan Trik</p>
+                        <p class="ens-title">Cara Budidaya Ikan Gurame</p>
+                        <p class="ens-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="profile2">
+                            <img src="assets/images/admin.png" alt="" style="width: 7%; cursor: pointer;">
+                            <div class="ab-isi2">
+                                <p class="ab-nama2">Admin</p>
+                                <p>14 Desember 2022</p>
+                            </div>
+                            <div class="desc-btn-ens">
+                                <button class="btn-ens">Baca Lebih Lanjut</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-ensiklo">
+                    <div class="icon-ens gurame">
+                        <img src="" alt="">
+                    </div>
+                    <div class="ens-isii">
+                        <p class="ens-jenis">Tips dan Trik</p>
+                        <p class="ens-title">Cara Budidaya Ikan Gurame</p>
+                        <p class="ens-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="profile2">
+                            <img src="assets/images/admin.png" alt="" style="width: 7%; cursor: pointer;">
+                            <div class="ab-isi2">
+                                <p class="ab-nama2">Admin</p>
+                                <p>14 Desember 2022</p>
+                            </div>
+                            <div class="desc-btn-ens">
+                                <button class="btn-ens">Baca Lebih Lanjut</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-ensiklo">
+                    <div class="icon-ens gurame">
+                        <img src="" alt="">
+                    </div>
+                    <div class="ens-isii">
+                        <p class="ens-jenis">Tips dan Trik</p>
+                        <p class="ens-title">Cara Budidaya Ikan Gurame</p>
+                        <p class="ens-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="profile2">
+                            <img src="assets/images/admin.png" alt="" style="width: 7%; cursor: pointer;">
+                            <div class="ab-isi2">
+                                <p class="ab-nama2">Admin</p>
+                                <p>14 Desember 2022</p>
+                            </div>
+                            <div class="desc-btn-ens">
+                                <button class="btn-ens">Baca Lebih Lanjut</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonHalaman">
+                <button class="btn-halaman nhii" id="btki" onclick="pindahHalaman(0)">&#10094</button>
+                <button class="btn-halaman hii"  id="bt1"  onclick="pindahHalaman(1)">1</button>
+                <button class="btn-halaman nhii" id="bt2"  onclick="pindahHalaman(2)">2</button>
+                <button class="btn-halaman nhii" id="bt3"  onclick="pindahHalaman(3)">3</button>
+                <button class="btn-halaman nhii" id="bt4"  onclick="pindahHalaman(4)">4</button>
+                <button class="btn-halaman nhii" id="bt5"  onclick="pindahHalaman(5)">5</button>
+                <button class="btn-halaman nhii" id="bt6"  onclick="pindahHalaman(10)">&#10095</button>
+            </div>
+        </div>
+    </main>
+<!-- FOoter BANG -->
+    <footer>
+        <div class="fo-atas">
+            <div class="fo-card">
+                <div>
+                    <img src="assets/icon/logo.svg" alt="" class="fo-logo">
+                </div>
+                <div class="fo-isi">
+                    <p>ber.ikan adalah web perdagangan perikanan terpadu. Misi kami adalah menjadikan laut sebagai mata pencaharian yang lebih baik untuk semua dengan menciptakan ekosistem perikanan yang adil dan berkelanjutan.</p>
+                </div>
+                <div class="fo-bawah">
+                    <img src="assets/icon/Group.svg" alt="" class="bawah-lo">
+                    <img src="assets/icon/twitter.svg" alt="" class="bawah-lo">
+                    <img src="assets/icon/linkedin.svg" alt="" class="bawah-lo">
+                </div>
+            </div>
+            <div class="fo-card2">
+                <p class="fo-title">Company</p>
+                <p class="fo-c2-isi"><a href="#cariKomoditas">Komoditas</a></p>
+                <p class="fo-c2-isi"><a href="#bacaEnsiklo">Ensiklopedia</a></p>
+                <p class="fo-c2-isi"><a href="#dampakBerikan">Tentang</a></p>
+            </div>
+            <div class="fo-card2">
+                <p class="fo-title">Akun Saya</p>
+                <p class="fo-c2-isi">Profile</p>
+                <p class="fo-c2-isi">Keranjang</p>
+            </div>
+            <div class="fo-card">
+                <p class="fo-title">Ikuti Kami</p>
+                <p class="fo-isi">Bergabunglah dengan berlangganan newsletter kami untuk mendapatkan info mengenai promo, produk terbaru, serta tips dan trik mengenai perikanan.</p>
+                <div class="fo-btn">
+                    <input type="text" placeholder="Masukkan email anda.." class="fo-input" id="form-langganan">
+                    <button class="fo-btn-lang" onclick="kirimLangganan()">Langganan</button>
+                </div>
+            </div>
+        </div>
+        <div class="fo-cr">
+            <p>Copyright © 2022 ber.ikan</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

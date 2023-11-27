@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/daftar.css">
+    <title>Sign in Page</title>
+</head>
+<body>
+    <main class="login-page">
+        <div class="card">
+            <div>
+                <a href="index.html"><img src="assets/icon/logo.svg" alt="" class="logo"/></a>
+            </div>
+            <div class="ckiri">
+                <h1 class="judul">
+                    <p>Daftar</p>
+                </h1>
+                <div class="card-content">
+                    <div class="nama">
+                        <div class="depan">
+                            <label for="namaDepan" class="form-login">Nama Depan</label>
+                            <input type="text" id="namaDepan" placeholder="Depan" class="input-nama">
+                        </div>
+                        <div class="depan">
+                            <label for="namaBelakang" placeholder="Depan" class="form-login">Nama Belakang</label>
+                            <input type="text" id="namaBelakang" placeholder="Belakang" class="input-nama">
+                        </div>
+                    </div>
+                    <div class="isi">
+                        <label for="email" class="form-login">Email</label>
+                        <input type="email" id="email" placeholder="maulana88@example.com" class="input-login">
+                    </div>
+                    <div class="isi">
+                        <label for="noTelepon" class="form-login">Nomor Telepon</label>
+                        <input type="text" id="noTelepon" placeholder="081222333444" class="input-login">
+                    </div>
+                    <div class="isi">
+                        
+                        <label for="kataSandiDaftar" class="form-login">Kata Sandi</label>
+                        <div class="kotak-sandi">
+                            <input type="password" id="kataSandiDaftar" placeholder="masukkan kata sandi" class="input-sandi" oninput="tambahMata(this.value, 'daftar')">
+                            <a id="BTDaftar" onclick="bukaPw('daftar')"></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-login" onclick="redirLogin()">Daftar</button>
+                <div class="txt-lks">
+                    <p>Sudah punya akun?</p>
+                    <a href="masuk.html" class="masuk">Masuk</a>
+                </div>
+            </div>
+        </div>
+        <div class="card pp">
+            <img src="assets/icon/ologo.svg" alt="o.logo"class="img-daftar">
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

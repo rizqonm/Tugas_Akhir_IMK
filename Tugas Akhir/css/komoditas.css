@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter&display=swap');
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #0077B6;
+    --secondary: #03045E;
+    --primary-text: #344054;
+    --secondary-text: #565656;
+}
+
+header {
+    border-bottom: .5px solid gray;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "DM Sans";
+    font-weight: 500;
+    padding: 5px 80px;
+}
+
+.tesboy {
+    width: 110px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+nav ul {
+    display: flex;
+    padding: 10px;
+    /* margin: 0 640px 0 20px; */
+    gap: 40px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.button-header {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    font-size: 12px;
+    padding: 7px 22px;
+    border-radius: 60px;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+}
+
+.ms {
+    background-color: var(--primary);
+    color: #eaeaea;
+    font-weight: 700;
+}
+
+.df {
+    background-color: white;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.logoo {
+    width: 40px;
+    height: 40px;
+}
+
+.profill {
+    display: flex;
+    gap: 15px;
+}
+
+.img-profil {
+    height: 35px;
+    cursor: pointer;
+}
+
+.border-profil {
+    border: 2px solid #0077B6;
+    border-radius: 60px;
+}
+
+.none {
+    display: none;
+}
+
+/* MAIN */
+
+.atas {
+    /* background-color: red; */
+    height: 50vh;
+    position: relative;
+    margin: auto;
+    transition: all .5s;
+}
+
+.mySlides1 {
+    display: none;
+}
+
+.fo-sli {
+    vertical-align: middle;
+    height: 40vh;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -42px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.judul-ck {
+    position: absolute;
+    font-family: "Inter";
+    font-size: 64px;
+    font-weight: 900;
+    color: #fff;
+    top: 25%;
+    left: 10%;
+    top: 45%;
+    left: 35%;
+    margin-top: -42px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.bawah {
+    display: flex;
+    gap: 30px;
+    background: rgb(217, 224, 236, .3);
+    padding: 30px 170px;
+}
+
+.kiri {
+    width: 30%;
+    height: 100px;
+}
+
+.kiri-atas {
+    display: flex;
+    justify-content: space-between;
+    font-family: "DM Sans";
+    align-items: end;
+}
+
+.ka-fi {
+    font-size: 36px;
+    font-weight: 700;
+    color: #344054;
+}
+
+.ka-re {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0077B6;
+    cursor: pointer;
+}
+
+.kiri-bawah {
+    background-color: #FFF;
+    margin-top: 20px;
+    width: 100%;
+    /* height: 450px; */
+    border-radius: 20px;
+    border: 2px solid #C2C2C2C2;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 30px;
+}
+
+.kb-ih {
+    font-family: "DM Sans";
+    color: #344054;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.kotak-dd {
+    font-family: "DM Sans";
+    font-size: 14px;
+    background-color: none;
+    border: 1px solid #E2E2E2;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #565656;
+    padding: 7px 14px;
+    cursor: pointer;
+}
+
+.kb-pilihan {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+    padding: 7px 14px;
+    margin-top: 10px;
+    gap: 2px;
+}
+
+.kb-txt {
+    font-family: "DM Sans";
+    font-size: 14px;
+    color: #565656;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.kb-txt:hover {
+    font-weight: bold;
+}
+
+.kanan {
+    width: 70%;
+    height: 100%;
+}
+
+.kanan-filter {
+    width: 100%;
+    height: 40px;
+}
+
+.kotak-kanan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: none;
+    border: 2px solid #C2C2C2C2;
+    padding: 10px 10px 10px 20px;
+    border-radius: 60px;
+    width: 60%;
+    height: 40px;
+}
+
+.input-cari {
+    font-family: "DM Sans";
+    width: 95%;
+    height: 20px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.tombol-cari {
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+}
+
+.ikan-b1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+}
+
+.card-ikan {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 300px;
+    background-color: #f7f7f7;
+    padding: 24px;
+    border: 3px solid #E2E2E2;
+    border-radius: 14px;
+}
+
+.card-ikan:hover {
+    border: 3px solid var(--primary);
+    transition: all .5s;
+}
+
+.icon-ikan {
+    background-size: 102% 220%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+}
+
+.bandeng {
+    background-image: url(../assets/images/bandeng.png);
+}
+
+.ikan-title {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: "DM Sans";
+    margin: 50px 0 10px 0;
+}
+
+.ikan-desc {
+    display: flex;
+    align-items: center;
+    font-family: "DM Sans";
+    justify-content: space-between;
+    font-size: 14px
+}
+
+.ikan-harga{
+    color: #00AC4F;
+}
+
+.ikan-min {
+    color: #696969;
+}
+
+.grs {
+    background-color: #E2E2E2;
+    margin: 20px 0 20px 0;
+    width: 100%;
+    height: 1px;
+}
+
+.ikan-stock {
+    font-size: 14px;
+    color: var(--primary);
+}
+
+.btn-beli {
+    font-size: 14px;
+    padding: 0px 15px;
+    border-radius: 60px;
+    font-family: "DM Sans";
+    color: #FFFFFF;
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.buttonHalaman {
+    /* background-color: #000; */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn-halaman {
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.hii {
+    color: #0077B6;
+    border: 2px solid #0077B6;
+}
+
+.nhii {
+    color: #565656;
+    border: 2px solid #E2E2E2;
+}
+
+
+/* FOOTER */
+footer {
+    height: 50vh;
+    padding-top: 30px;
+}
+
+.fo-atas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    padding: 0 60px 0 100px;
+}
+
+.fo-card {
+    height: 30vh;
+    width: 27%;
+}
+
+.fo-card2 {
+    /* background-color:red; */
+    height: 30vh;
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.fo-logo {
+    margin: 10px 0 10px 0;
+    width: 40%;
+    height: 40%;
+}
+
+.fo-isi {
+    font-family: "DM Sans";
+    margin: 0 30px 0 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--secondary-text);
+}
+
+.fo-bawah{
+    display: flex;
+    gap: 10px;
+}
+
+.bawah-lo {
+    margin: 20px 0 20px 0;
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+}
+
+.fo-title {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 18px;
+    margin: 25px 0 20px 0;
+}
+
+.fo-c2-isi {
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 14px;
+    color: #3D3D3D;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.fo-btn {
+    border: 1px solid #3D3D3D;
+    margin: 20px 60px 0 0;
+    border-radius: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px 5px 20px;
+    justify-content: space-between;
+}
+
+.fo-input {
+    border: none;
+    font-size: 12px;
+    outline: none;
+}
+
+.fo-btn-lang {
+    font-size: 12px;
+    padding: 0px 15px;
+    border-radius: 60px;
+    font-family: "DM Sans";
+    cursor: pointer;
+    /* margin-right: 10px; */
+    color: #FFFFFF;
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+}
+
+.fo-cr {
+    display: flex;
+    justify-content: center;
+    font-family: "DM Sans";
+    padding-top: 10px;
+    font-size: 14px;
+    color: #A4A4A4;
+}

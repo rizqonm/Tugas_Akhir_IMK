@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/masuk.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+    <title>Login Page</title>
+</head>
+<body>
+    <main class="login-page">
+        <div class="card">
+            <div>
+                <a href="index.html"><img src="assets/icon/logo.svg" alt="" class="logo"/></a>
+            </div>
+            <div class="ckiri">
+                <h1 class="judul-masuk">
+                    <p>Masuk</p>
+                </h1>
+                <div class="card-content">
+                    <label for="email" class="form-login">Email</label>
+                    <input type="email" id="email" placeholder="maulana88@example.com" class="input-login">
+                    <label for="kataSandiMasuk" class="form-login">Kata Sandi</label>
+                    <div class="kotak-sandi">
+                        <input type="password" id="kataSandiMasuk" placeholder="masukkan kata sandi" class="input-sandi" oninput="tambahMata(this.value, 'masuk')">
+                        <a id="BTMasuk" onclick="bukaPw('masuk')"></a>
+                    </div>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="checkBox">
+                    <div class="cb-text">
+                        <label for="checkBox" class="poin">Ingat saya</label>
+                        <p class="blue poin">Lupa kata sandi?</p>
+                    </div>
+                </div>
+                <button class="btn-login" onclick="redirHome2()">Masuk</button>
+                <div class="txt-lks">
+                    <p>Belum memiliki akun?</p>
+                    <a href="daftar.html" class="daftar">Daftar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card pp">
+            <img src="assets/icon/ologo.svg" alt="ikan" class="img-masuk">
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

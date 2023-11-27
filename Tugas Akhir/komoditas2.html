@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/komoditas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <title>Komoditas page</title>
+</head>
+<body>
+    <header id="header">
+        <div>
+            <nav>
+                <ul>
+                    <a href="index2.html" class="tesboy"><img src="assets/icon/logo2.svg" alt="logo"  class="logo"></a>
+                    <!-- <img src="assets/icon/logo.svg" alt="logo" class="logo"> -->
+                    <li><a href="komoditas2.html">Komoditas</a></li>
+                    <li><a href="ensiklo2.html">Ensiklopedia</a></li>
+                    <li><a href="index2.html">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="button-header none" id="buttonHeader">
+            <button class="button ms" onclick="redirLogin()">Masuk</button>
+            <button class="button df" onclick="redirDaftar()">Daftar</button>
+        </div>
+        <div class="profill" id="kotakProfile">
+            <img src="assets/icon/keranjang.svg" alt="" class="img-profil" onclick="redirKeranjang()">
+            <a href="profile.html">
+                <img src="assets/images/admin.png" alt="" class="img-profil border-profil">
+            </a>            
+        </div>
+    </header>
+<!-- MAIN BANG -->
+    <main>
+        <div class="atas">
+            <div class="mySlides1"><img src="assets/images/pict2.png" style="width:100%"></div>
+            <div class="mySlides1"><img src="assets/images/pict3.png" style="width:100%"></div>
+            <div class="mySlides1"><img src="assets/images/pict1.png" style="width:100%"></div>
+            <p class="judul-ck">Cari Komoditas</p>
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <div class="bawah">
+            <div class="kiri">
+                <div class="kiri-atas">
+                    <p class="ka-fi">Filter</p>
+                    <p class="ka-re" onclick="resetFilterkategori()">Reset</p>
+                </div>
+                <div class="kiri-bawah">
+                    <div class="kb-isi">
+                        <p class="kb-ih">Kategori</p>
+                        <div class="kotak-dd" onclick="tampilkanPilihan(1)">
+                            <p id="kk">Kategori</p>
+                            <img src="assets/icon/panahBawah.svg" alt="">
+                        </div>
+                        <div class="kb-pilihan none"  id="kpkategori">
+                            <p><a class="kb-txt" onclick="kpfilter(1, this.innerHTML)">Ikan Tambak</a></p>
+                            <p><a class="kb-txt" onclick="kpfilter(1, this.innerHTML)">Ikan Budidaya</a></p>
+                            <p><a class="kb-txt" onclick="kpfilter(1, this.innerHTML)">Ikan Laut</a></p>
+                            <p><a class="kb-txt" onclick="kpfilter(1, this.innerHTML)">Semua</a></p>
+                        </div>
+                    </div>
+                    <div class="kb-isi">
+                        <p class="kb-ih">Grade</p>
+                        <div class="kotak-dd" onclick="tampilkanPilihan(2)">
+                            <p id="kg">Grade</p>
+                            <img src="assets/icon/panahBawah.svg" alt="">
+                        </div>
+                        <div class="kb-pilihan none"  id="kpgrade">
+                            <p><a class="kb-txt" onclick="kpfilter(2, this.innerHTML)">a</a></p>
+                            <p><a class="kb-txt" onclick="kpfilter(2, this.innerHTML)">b</a></p>
+                            <p><a class="kb-txt" onclick="kpfilter(2, this.innerHTML)">c</a></p>
+                            <p><a class="kb-txt" onclick="kpfilter(2, this.innerHTML)">Semua</a></p>
+                        </div>
+                    </div>
+                    <div class="kb-isi">
+                        <p class="kb-ih">Lokasi</p>
+                        <div class="kotak-dd" onclick="tampilkanPilihan(3)">
+                            <p id="kl">Lokasi</p>
+                            <img src="assets/icon/panahBawah.svg" alt="">
+                        </div>
+                        <div class="kb-pilihan none"  id="kplokasi">
+                            <p><a class="kb-txt" onclick="kpfilter(3, this.innerHTML)">a</a></p>
+                            <p><a class="kb-txt" onclick="kpfilter(3, this.innerHTML)">b</a></p>
+                            <p><a class="kb-txt" onclick="kpfilter(3, this.innerHTML)">Semua</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanan">
+                <div class="kanan-filter">
+                    <div class="kotak-kanan">
+                        <input type="text" id="cariProduk" placeholder="cari produk" class="input-cari">
+                        <a id="BTcari" onclick="cariProdukIni()">
+                            <img src="assets/icon/search.svg" alt="cari"  class="tombol-cari">
+                        </a>
+                    </div>
+                </div>
+                <div class="kanan-isi">
+                    <div class="ikan-b1">
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Bandeng</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli" onclick="redirProduct()">Beli</button>
+                            </div>
+                        </div>
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Cakalang</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli" onclick="redirProduct()">Beli</button>
+                            </div>
+                        </div>
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Tuna</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli" onclick="redirProduct()">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TESS -->
+                    <div class="ikan-b1">
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Bandeng</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli">Beli</button>
+                            </div>
+                        </div>
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Cakalang</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli">Beli</button>
+                            </div>
+                        </div>
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Tuna</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ikan-b1">
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Bandeng</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli">Beli</button>
+                            </div>
+                        </div>
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Cakalang</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli">Beli</button>
+                            </div>
+                        </div>
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Tuna</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ikan-b1">
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Bandeng</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli">Beli</button>
+                            </div>
+                        </div>
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Cakalang</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli">Beli</button>
+                            </div>
+                        </div>
+                        <div class="card-ikan">
+                            <div class="icon-ikan bandeng"></div>
+                            <p class="ikan-title">Tuna</p>
+                            <div class="ikan-desc">
+                                <p class="ikan-harga">Rp 55.000</p>
+                                <p class="ikan-min">Min. Order 1 Kg</p>
+                            </div>
+                            <div class="grs"></div>
+                            <div class="ikan-desc">
+                                <p class="ikan-stock">Stock Tersedia</p>
+                                <button class="btn-beli">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonHalaman">
+                        <button class="btn-halaman nhii" id="btki" onclick="pindahHalaman(0)">&#10094</button>
+                        <button class="btn-halaman hii"  id="bt1"  onclick="pindahHalaman(1)">1</button>
+                        <button class="btn-halaman nhii" id="bt2"  onclick="pindahHalaman(2)">2</button>
+                        <button class="btn-halaman nhii" id="bt3"  onclick="pindahHalaman(3)">3</button>
+                        <button class="btn-halaman nhii" id="bt4"  onclick="pindahHalaman(4)">4</button>
+                        <button class="btn-halaman nhii" id="bt5"  onclick="pindahHalaman(5)">5</button>
+                        <button class="btn-halaman nhii" id="bt6"  onclick="pindahHalaman(10)">&#10095</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- FOoter BANG -->
+    <footer>
+        <div class="fo-atas">
+            <div class="fo-card">
+                <div>
+                    <img src="assets/icon/logo.svg" alt="" class="fo-logo">
+                </div>
+                <div class="fo-isi">
+                    <p>ber.ikan adalah web perdagangan perikanan terpadu. Misi kami adalah menjadikan laut sebagai mata pencaharian yang lebih baik untuk semua dengan menciptakan ekosistem perikanan yang adil dan berkelanjutan.</p>
+                </div>
+                <div class="fo-bawah">
+                    <img src="assets/icon/Group.svg" alt="" class="bawah-lo">
+                    <img src="assets/icon/twitter.svg" alt="" class="bawah-lo">
+                    <img src="assets/icon/linkedin.svg" alt="" class="bawah-lo">
+                </div>
+            </div>
+            <div class="fo-card2">
+                <p class="fo-title">Company</p>
+                <p class="fo-c2-isi"><a href="komoditas2.html">Komoditas</a></p>
+                <p class="fo-c2-isi"><a href="ensiklo2.html">Ensiklopedia</a></p>
+                <p class="fo-c2-isi"><a href="index2.html">Tentang</a></p>
+            </div>
+            <div class="fo-card2">
+                <p class="fo-title">Akun Saya</p>
+                <p class="fo-c2-isi">Profile</p>
+                <p class="fo-c2-isi">Keranjang</p>
+            </div>
+            <div class="fo-card">
+                <p class="fo-title">Ikuti Kami</p>
+                <p class="fo-isi">Bergabunglah dengan berlangganan newsletter kami untuk mendapatkan info mengenai promo, produk terbaru, serta tips dan trik mengenai perikanan.</p>
+                <div class="fo-btn">
+                    <input type="text" placeholder="Masukkan email anda.." class="fo-input" id="form-langganan">
+                    <button class="fo-btn-lang" onclick="kirimLangganan()">Langganan</button>
+                </div>
+            </div>
+        </div>
+        <div class="fo-cr">
+            <p>Copyright © 2022 ber.ikan</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.login-page {
+    display: flex;
+}
+
+.card {
+    width: 50%;
+    height: 100vh;
+    font-family: "Poppins";
+}
+
+.logo {
+    margin: 20px 0 0 20px;
+    height: 20%;
+    width: 20%;
+}
+
+.ckiri {
+    padding: 110px 0 0 150px;
+}
+
+.judul-masuk {
+    display: flex;
+    margin-bottom: 30px;
+    color: #03045E;
+    font-family: "Inter";
+    font-weight: 900;
+    font-size: 48px;
+}
+/* INI */
+#h-masuk {
+    font-weight: 300;
+    color: #58585B;
+}
+
+.form-login {
+    font-weight: 400;
+    font-size: 14px;
+    color: #344054;
+    font-family: "DM sans";
+    cursor: pointer;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-login {
+    background-color: none;
+    border: 2px solid #E2E2E2;
+    border-radius: 60px;
+    width: 425px;
+    height:40px;
+    padding: 15px 20px;
+    outline: none;
+}
+
+.txt-lks {
+    display: flex;
+    font-size: 14px;
+    color: #344054;
+    font-family: "DM Sans";
+    font-weight: 400;
+    margin: 15px 0 0 130px;
+    gap: 4px;
+}
+
+.kotak-sandi {
+    display: flex;
+    align-items: center;
+    background-color: none;
+    border: 2px solid #E2E2E2;
+    padding: 10px 20px;
+    border-radius: 60px;
+    width: 425px;
+    height:40px;
+}
+
+.input-sandi {
+    width: 380px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+.bukaa {
+    background-image: url(../assets/icon/mataBuka.svg);
+    width: 20px;
+    height: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.tutupp {
+    background-image: url(../assets/icon/mataTutup.svg);
+    width: 20px;
+    height: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.check {
+    margin-top: 10px;
+    width: 425px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-size: 14px;
+    color: #344054;
+    font-family: "DM Sans";
+    font-weight: 500;
+}
+
+.cb-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue {
+    color: #0077B6;
+}
+
+.poin{
+    cursor: pointer;
+}
+
+.btn-login {
+    width: 425px;
+    height: 41px;
+    margin-top: 30px;
+    background: #0077B6;
+    font-family: "DM Sans";
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.daftar {
+    font-weight: 500;
+    color: #0077B6;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pp {
+    background-image: url(../assets/images/gmas.png);
+    background-size: 100% 130%;
+    background-position: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-masuk {
+    width: 60%;
+    height: 60%;
+}

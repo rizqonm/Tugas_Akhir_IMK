@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter&display=swap');
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #0077B6;
+    --secondary: #03045E;
+    --primary-text: #344054;
+    --secondary-text: #565656;
+}
+
+header {
+    border-bottom: .5px solid gray;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "DM Sans";
+    font-weight: 500;
+    padding: 5px 80px;
+}
+
+.tesboy {
+    width: 110px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+nav ul {
+    display: flex;
+    padding: 10px;
+    /* margin: 0 640px 0 20px; */
+    gap: 40px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.button-header {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    font-size: 14px;
+    padding: 7px 22px;
+    border-radius: 60px;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+}
+
+.ms {
+    margin-top: 20px;
+    background-color: var(--primary);
+    color: #eaeaea;
+    font-weight: 700;
+    height: 40px;
+    transition: all .5s;
+}
+
+.ms:hover {
+    background-color: white;
+    color: var(--primary);
+}
+
+.df {
+    background-color: white;
+    color: var(--primary);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.logoo {
+    width: 40px;
+    height: 40px;
+}
+
+.profill {
+    display: flex;
+    gap: 15px;
+}
+
+.img-profil {
+    height: 35px;
+    cursor: pointer;
+}
+
+.border-profil {
+    border: 2px solid #0077B6;
+    border-radius: 60px;
+}
+
+.none {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+.atas {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px 30px 100px;
+}
+
+.kembali {
+    display: flex;
+    align-items: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+    color: #0077B6;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.judul {
+    font-family: "Inter";
+    font-size: 44px;
+    font-weight: 900;
+    color: #03045E;
+}
+
+.grs {
+    background-color: #E2E2E2;
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 3px;
+}
+
+.bawah {
+    display: flex;
+    padding: 50px 100px;
+    background: rgb(217, 224, 236, 0.3);
+    gap: 50px;
+}
+
+.kiri {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #FFF;
+    font-family: "DM Sans";
+    padding: 40px;
+    border-radius: 20px;
+    gap:10px;
+}
+
+.chb {
+    width: 20px;
+    height: 20px;
+}
+
+.semua-ch {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: 500;
+    color: #344054;
+}
+
+.item {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    /* height: 15vh; */
+}
+
+.item-kiri {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-weight: 500;
+    color: #344054;
+}
+
+.judul-dp {
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.dp-isi {
+    display: flex;
+    justify-content: space-between;
+}
+
+.baris-pembayaran {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dp-pem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.kotak {
+    /* background-color: red; */
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 4px 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    border: 2px solid #E2E2E2;
+}
+
+.mandiri {
+    background-image: url(../assets/icon/mandiri.png);
+}
+
+.dana {
+    background-image: url(../assets/icon/dana.png);
+}
+
+.bulat {
+    height: 15px;
+    width: 15px;
+    border-radius: 30px;
+}
+
+.mt-bawah {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.plain {
+    font-family: "Inter";
+    font-weight: 700;
+}
+
+.mt-kanan {
+    cursor: pointer;
+}
+
+
+
+
+
+
+.imagee {
+    width: 12%;
+}
+
+.item-teks {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 7px;
+    padding: 8px 0;
+}
+
+.kanan-judul {
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 600;
+    color: #344054;
+}
+
+.desk-text {
+    display: flex;
+    font-family: "DM Sans";
+    font-size: 15px;
+    color: #565656;
+    gap: 5px;
+}
+
+.nilai-desk {
+    color: #0077B6;
+    font-weight: 500;
+}
+
+.harga {
+    display: flex;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-weight: 700;
+    color: #565656;
+}
+
+.rupiah {
+    color: #00AC4F;
+}
+
+.sampah {
+    width: 20%;
+    cursor: pointer;
+}
+
+.item-kanan {
+    /* background-color: blue; */
+    height: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    /* width: 50px; */
+}
+
+.kanan {
+    background-color: #FFF;
+    width: 25%;
+    height: 100%;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 600;
+    color: #565656;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hargaa {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.keterangan {
+    font-size: 12px;
+}
+
+.ijo {
+    color: #00AC4F;
+}
+
+.judul-kanan {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 24px;
+    color: #344054;
+}
+
+.besar {
+    font-weight: 900;
+    font-size: 48px;
+    color: #0077B6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    height: 50vh;
+    padding-top: 30px;
+}
+
+.fo-atas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    padding: 0 60px 0 100px;
+}
+
+.fo-card {
+    height: 30vh;
+    width: 27%;
+}
+
+.fo-card2 {
+    /* background-color:red; */
+    height: 30vh;
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.fo-logo {
+    margin: 10px 0 10px 0;
+    width: 40%;
+    height: 40%;
+}
+
+.fo-isi {
+    font-family: "DM Sans";
+    margin: 0 30px 0 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--secondary-text);
+}
+
+.fo-bawah{
+    display: flex;
+    gap: 10px;
+}
+
+.bawah-lo {
+    margin: 20px 0 20px 0;
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+}
+
+.fo-title {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 18px;
+    margin: 25px 0 20px 0;
+}
+
+.fo-c2-isi {
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 14px;
+    color: #3D3D3D;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.fo-btn {
+    border: 1px solid #3D3D3D;
+    margin: 20px 60px 0 0;
+    border-radius: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px 5px 20px;
+    justify-content: space-between;
+}
+
+.fo-input {
+    border: none;
+    font-size: 12px;
+    outline: none;
+}
+
+.fo-btn-lang {
+    font-size: 12px;
+    padding: 0px 15px;
+    border-radius: 60px;
+    font-family: "DM Sans";
+    cursor: pointer;
+    /* margin-right: 10px; */
+    color: #FFFFFF;
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+}
+
+.fo-cr {
+    display: flex;
+    justify-content: center;
+    font-family: "DM Sans";
+    padding-top: 10px;
+    font-size: 14px;
+    color: #A4A4A4;
+}
